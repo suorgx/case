@@ -1,0 +1,13 @@
+@import url("./assets/fonts/fonts.scss");
+
+$base-font: "Montserrat";
+$second-font: "DM Sans";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $base-font;
+    user-select: none;
+}

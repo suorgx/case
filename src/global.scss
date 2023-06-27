@@ -1,12 +1,32 @@
 @import url("./assets/fonts/fonts.scss");
 
-$base-font: "Montserrat";
-$second-font: "DM Sans";
+:root {
+    --base-font: "Montserrat";
+    --second-font: "DM Sans";
 
+    --base-color: #000;
+    --second-color: #FFF;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: $base-font;
+}
+
+body {
+    font-family: var(--base-font);
+    background: var(--base-color);
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }

@@ -7,11 +7,11 @@ export default defineComponent({
 </script>
 
 <template>
-<footer>
+<footer class="container">
     footer
 </footer>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 
 </style>

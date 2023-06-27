@@ -14,10 +14,10 @@ export default defineComponent({
 
 <template>
     <TheHeader></TheHeader>
-    <main>Main</main>
+    <main class="container">Main</main>
     <TheFooter></TheFooter>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 </style>

@@ -2,19 +2,21 @@
 import {defineComponent} from "vue"
 import TheHeader from "./components/TheHeader.vue"
 import TheFooter from "./components/TheFooter.vue"
+import MainPage from "./pages/MainPage.vue"
 
 export default defineComponent({
     name: "App",
     components: {
         TheHeader,
-        TheFooter
+        TheFooter,
+        MainPage
     }
 })
 </script>
 
 <template>
     <TheHeader></TheHeader>
-    <main class="container">Main</main>
+    <MainPage></MainPage>
     <TheFooter></TheFooter>
 </template>
 

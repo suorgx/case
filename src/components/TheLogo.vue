@@ -17,7 +17,7 @@ export default defineComponent({
     text-transform: uppercase;
     font-size: 22px;
     font-weight: 700;
-    color: var(--base-color);
+    color: var(--second-color);
     text-decoration: none;
     display: block;
 }

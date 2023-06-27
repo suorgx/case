@@ -23,7 +23,8 @@ export default defineComponent({
 
 <style lang="scss">
 .the-header {
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background: transparent;
     display: flex;
     align-items: center;

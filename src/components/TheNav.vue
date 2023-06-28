@@ -36,6 +36,7 @@ export default defineComponent({
 <style lang="scss">
 .the-nav {
 	color: var(--second-color);
+	font-size: 18px;
 
 	&__list {
 		list-style-type: none;

@@ -2,7 +2,7 @@
 import {defineComponent} from 'vue'
 
 export default defineComponent({
-	name: "TheButton",
+	name: "TheMainButton",
 	props: {
 		text: String
 	}
@@ -10,39 +10,40 @@ export default defineComponent({
 </script>
 
 <template>
-	<button class="the-button">
+	<button class="the-main-button">
 		{{ text }}
 	</button>
 </template>
 
 <style lang="scss">
-.the-button {
+.the-main-button {
 	display: flex;
-	padding: 20px 30px;
+	padding: 25px 30px;
 	align-items: center;
 	gap: 10px;
-	border-radius: 5px;
-	background: var(--second-color);
-	color: var(--base-color);
+	border-radius: 10px;
+	background: var(--green-color);
+	color: var(--second-color);
 	border: none;
 	font-size: 20px;
-	font-weight: 500;
+	font-weight: 700;
+	letter-spacing: 0.2px;
 	line-height: 100%;
 	user-select: none;
 	cursor: pointer;
 	transition: background 0.5s;
 
 	&:hover {
-		background: #E9FFF6;
+		background: #94B9A9;
 	}
 
 	&:active {
-		background: #CCD7D2;
+		background: #6B7D76;
 	}
 
 	&:disabled {
-		background: #D3D4D4;
-		color: rgba(255, 255, 255, 0.60);
+		background: #D3DCD8;
+		color: #F5F5F5;
 		cursor: auto;
 	}
 }

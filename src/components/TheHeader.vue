@@ -1,8 +1,8 @@
 <script>
 import {defineComponent} from 'vue'
-import TheLogo from './TheLogo.vue'
-import TheNav from './TheNav.vue'
-import TheButton from './TheButton.vue'
+import TheLogo from '@/components/TheLogo.vue'
+import TheNav from '@/components/TheNav.vue'
+import TheButton from '@/components/TheButton.vue'
 
 export default defineComponent({
 	name: "TheHeader",

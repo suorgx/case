@@ -1,8 +1,6 @@
-@import url("./assets/fonts/fonts.scss");
-
 :root {
-    --base-font: "Montserrat";
-    --second-font: "DM Sans";
+    --base-font: "Montserrat", sans-serif;
+    --second-font: "DM Sans", sans-serif;
 
     --base-color: #000;
     --second-color: #FFF;
@@ -33,7 +31,7 @@ body {
 }
 
 .container {
-    max-width: 1224px;
+    max-width: 1232px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;

@@ -1,14 +1,18 @@
 <script>
 import {defineComponent} from 'vue'
+import TheChip from '@/components/TheChip.vue'
 
 export default defineComponent({
-	name: "TheCard"
+	name: "TheCard",
+	components: {
+		TheChip
+	}
 })
 </script>
 
 <template>
 	<div class="the-card">
-		<img class="the-card__image" src="@/assets/images/content_image.webp" alt=".">
+		<img class="the-card__image" src="@/assets/images/card_image.webp" alt=".">
 		<div class="the-card__info">
 			<div class="the-card__price">
 				$ 59,345
@@ -18,7 +22,7 @@ export default defineComponent({
 			</div>
 			<div class="the-card__divider"></div>
 			<div class="the-card__chips">
-				2 1 1
+				<TheChip></TheChip>
 			</div>
 		</div>
 	</div>

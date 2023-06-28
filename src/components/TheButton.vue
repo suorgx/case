@@ -31,6 +31,7 @@ export default defineComponent({
 	user-select: none;
 	cursor: pointer;
 	transition: background 0.5s;
+	width: fit-content;
 
 	&:hover {
 		background: #E9FFF6;

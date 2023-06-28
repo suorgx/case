@@ -20,7 +20,7 @@ export default defineComponent({
 				<TheNavFooter></TheNavFooter>
 			</div>
 			<div class="the-footer__copyright">
-				Copyright © 2022 Kartik Bansal . All Rights Reseved.
+				Copyright &copy;&nbsp;2022 Kartik Bansal . All Rights Reseved.
 			</div>
 		</div>
 	</footer>

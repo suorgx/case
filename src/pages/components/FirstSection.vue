@@ -1,10 +1,12 @@
 <script>
 import {defineComponent} from 'vue'
 import TheCaption from '@/components/TheCaption.vue'
+import TheMainButton from '@/components/TheMainButton.vue'
 
 export default defineComponent({
 	name: "FirstSection",
 	components: {
+		TheMainButton,
 		TheCaption
 	}
 })
@@ -19,6 +21,7 @@ export default defineComponent({
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit ut&nbsp;aliquam, purus sit amet luctus
 					venenatis, lectus magna fringilla urna, porttitor.
 				</p>
+				<TheMainButton text="Search now"></TheMainButton>
 			</div>
 			<img class="first-section__right" src="@/assets/images/content_image.webp" alt=".">
 		</div>

@@ -22,7 +22,9 @@ export default defineComponent({
 			</div>
 			<div class="the-card__divider"></div>
 			<div class="the-card__chips">
-				<TheChip></TheChip>
+				<TheChip text="2500 sqft"></TheChip>
+				<TheChip text="3" icon="bed"></TheChip>
+				<TheChip text="2" icon="bath"></TheChip>
 			</div>
 		</div>
 	</div>
@@ -67,6 +69,13 @@ export default defineComponent({
 		color: var(--base-color);
 		font-size: 20px;
 		font-weight: 700;
+	}
+
+	&__chips {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		gap: 10px;
+		align-items: center;
 	}
 }
 </style>

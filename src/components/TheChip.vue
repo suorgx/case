@@ -2,15 +2,22 @@
 import {defineComponent} from 'vue'
 
 export default defineComponent({
-	name: "TheChip"
+	name: "TheChip",
+	props: {
+		text: String,
+		icon: {
+			type: String,
+			default: 'link'
+		}
+	}
 })
 </script>
 
 <template>
 <div class="the-chip">
-	<img class="the-chip__icon" src="@/assets/images/card_icon_link.svg" alt="" />
+	<img class="the-chip__icon" :src="`src/assets/images/card_icon_${icon}.svg`" alt="" />
 	<div class="the-chip__name">
-		2500 sqft
+		{{ text }}
 	</div>
 </div>
 </template>

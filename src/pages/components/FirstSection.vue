@@ -20,12 +20,12 @@ export default defineComponent({
 					venenatis, lectus magna fringilla urna, porttitor.
 				</p>
 			</div>
-			<img class="first-section__right" src="@/assets/images/content_image_1.png" alt="">
+			<img class="first-section__right" src="@/assets/images/content_image.webp" alt=".">
 		</div>
 	</section>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .first-section {
 	background: linear-gradient(to right, var(--base-color) 61.2%, var(--green-color) 61.2%);
 	width: 100%;

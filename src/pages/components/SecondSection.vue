@@ -18,7 +18,7 @@ export default defineComponent({
 	</section>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .second-section {
 	padding-top: 150px;
 	padding-bottom: 80px;

@@ -1,8 +1,8 @@
 <script>
-import {defineComponent} from "vue"
-import TheHeader from "./components/TheHeader.vue"
-import TheFooter from "./components/TheFooter.vue"
-import MainPage from "./pages/MainPage.vue"
+import {defineComponent} from 'vue'
+import TheHeader from './components/TheHeader.vue'
+import TheFooter from './components/TheFooter.vue'
+import MainPage from './pages/MainPage.vue'
 
 export default defineComponent({
     name: "App",

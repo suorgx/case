@@ -1,5 +1,5 @@
 <script>
-import {defineComponent} from "vue"
+import {defineComponent} from 'vue'
 
 export default defineComponent({
     name: "TheFooter"
@@ -7,9 +7,9 @@ export default defineComponent({
 </script>
 
 <template>
-<footer class="container">
-    footer
-</footer>
+	<footer class="container">
+	    footer
+	</footer>
 </template>
 
 <style lang="scss">

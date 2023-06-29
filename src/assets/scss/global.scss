@@ -1,12 +1,3 @@
-:root {
-    --base-font: "Montserrat", sans-serif;
-    --second-font: "DM Sans", sans-serif;
-
-    --base-color: #000;
-    --second-color: #FFF;
-    --green-color: #7D9B8F;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +10,7 @@ body {
 }
 
 body {
-    font-family: var(--base-font);
+    font-family: $base-font;
 }
 
 #app {

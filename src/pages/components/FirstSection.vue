@@ -30,9 +30,9 @@ export default defineComponent({
 
 <style lang="scss">
 .first-section {
-	background: linear-gradient(to right, var(--base-color) 61.2%, var(--green-color) 61.2%);
+	background: linear-gradient(to right, $base-color 61.2%, $green-color 61.2%);
 	width: 100%;
-	color: var(--second-color);
+	color: $second-color;
 	padding-top: 200px;
 	padding-bottom: 100px;
 
@@ -57,12 +57,11 @@ export default defineComponent({
 	}
 
 	&__description {
-		color: #FFF;
+		color: rgba($second-color, 0.8);
 		font-size: 18px;
 		font-weight: 500;
 		line-height: 110%;
 		text-transform: capitalize;
-		opacity: 0.8;
 	}
 
 }

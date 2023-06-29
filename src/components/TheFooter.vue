@@ -31,7 +31,7 @@ export default defineComponent({
 	width: 100%;
 	padding-top: 100px;
 	padding-bottom: 40px;
-	background: var(--base-color);
+	background: $base-color;
 
 	&__wrapper {
 		display: flex;
@@ -46,7 +46,8 @@ export default defineComponent({
 	}
 
 	&__copyright {
-		color: var(--second-color);
+		color: $second-color;
+		font-family: $second-font;
 		font-size: 12px;
 		font-weight: 700;
 		opacity: 0.69;

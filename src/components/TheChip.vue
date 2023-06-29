@@ -25,7 +25,7 @@ export default defineComponent({
 <style lang="scss">
 .the-chip {
 	border-radius: 5.5px;
-	background: var(--second-color);
+	background: $second-color;
 	box-shadow: 0 0 6.5px 0 rgba(20, 20, 20, 0.15);
 	display: flex;
 	padding: 10px;
@@ -41,7 +41,7 @@ export default defineComponent({
 	}
 
 	&__name {
-		color: var(--base-color);
+		color: $base-color;
 		font-size: 16px;
 		font-weight: 700;
 		line-height: 100%;

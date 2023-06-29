@@ -2,12 +2,14 @@
 import {defineComponent} from 'vue'
 import TheCaption from '@/components/TheCaption.vue'
 import TheCard from '@/components/TheCard.vue'
+import TheQuote from '@/components/TheQuote.vue'
 
 export default defineComponent({
 	name: "SecondSection",
 	components: {
 		TheCaption,
-		TheCard
+		TheCard,
+		TheQuote
 	}
 })
 </script>
@@ -26,8 +28,13 @@ export default defineComponent({
 						<TheCard></TheCard>
 						<TheCard></TheCard>
 					</div>
-					quotes
+					<TheQuote
+						name="John Doe"
+						position="Founder HyperEstate"
+						quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut&nbsp;aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor."
+					></TheQuote>
 				</div>
+				<div class="second-section__divider"></div>
 				<div class="second-section__tail">
 					<TheCaption text="lectus magna"></TheCaption>
 				</div>
@@ -42,7 +49,7 @@ export default defineComponent({
 	padding-bottom: 80px;
 	width: 100%;
 	min-height: 40vh;
-	background: linear-gradient(to bottom, var(--second-color) 37.8%, var(--base-color) 37.8%);
+	background: linear-gradient(to bottom, $second-color 37.8%, $base-color 37.8%);
 
 	&__wrapper {
 		width: 100%;
@@ -68,6 +75,12 @@ export default defineComponent({
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 30px;
+	}
+
+	&__divider {
+		width: 100%;
+		height: 1px;
+		background: rgba($second-color, 0.69);
 	}
 }
 </style>

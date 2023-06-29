@@ -28,16 +28,16 @@ export default defineComponent({
 
 <style lang="scss">
 .the-caption {
-	color: var(--second-color);
+	color: $second-color;
 	font-size: 58px;
 	font-weight: 700;
 
 	&--base-color {
-		color: var(--base-color);
+		color: $base-color;
 	}
 
 	&--second-color {
-		color: var(--second-color);
+		color: $second-color;
 	}
 }
 </style>

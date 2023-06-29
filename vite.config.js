@@ -9,5 +9,12 @@ export default defineConfig({
         alias: [
             { find: '@', replacement: fileURLToPath(new URL('./src', import.meta.url)) }
         ]
+    },
+    css: {
+        preprocessorOptions: {
+            scss: {
+                additionalData: `@import "@/assets/scss/variables.scss";`
+            }
+        }
     }
 })

@@ -60,7 +60,7 @@ export default defineComponent({
 		font-weight: 700;
 
 		&--active {
-			color: var(--second-color);
+			color: $second-color;
 		}
 	}
 

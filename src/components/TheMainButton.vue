@@ -22,8 +22,8 @@ export default defineComponent({
 	align-items: center;
 	gap: 10px;
 	border-radius: 10px;
-	background: var(--green-color);
-	color: var(--second-color);
+	background: $green-color;
+	color: $second-color;
 	border: none;
 	font-size: 20px;
 	font-weight: 700;

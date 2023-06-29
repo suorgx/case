@@ -35,13 +35,13 @@ export default defineComponent({
 	width: 100%;
 	border-radius: 10px;
 	overflow: hidden;
-	background: var(--second-color);
+	background: $second-color;
 
 	&__image {
 		width: 100%;
 		height: 280px;
 		display: block;
-		object-fit: cover;
+		object-fit: none;
 	}
 
 	&__info {
@@ -55,18 +55,18 @@ export default defineComponent({
 		width: 100%;
 		height: 1px;
 		flex-shrink: 0;
-		background: var(--base-color);
+		background: $base-color;
 	}
 
 	&__price {
-		color: var(--base-color);
+		color: $base-color;
 		font-size: 24px;
 		font-weight: 700;
 		line-height: 100%;
 	}
 
 	&__name {
-		color: var(--base-color);
+		color: $base-color;
 		font-size: 20px;
 		font-weight: 700;
 	}

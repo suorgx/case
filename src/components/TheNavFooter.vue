@@ -55,7 +55,7 @@ export default defineComponent({
 	}
 
 	&__item {
-		color: rgba(125, 155, 143, 0.70);
+		color: rgba($green-color, 0.90);
 		font-size: 16px;
 		font-weight: 700;
 

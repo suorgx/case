@@ -35,8 +35,12 @@ export default defineComponent({
 					></TheQuote>
 				</div>
 				<div class="second-section__divider"></div>
-				<div class="second-section__tail">
-					<TheCaption text="lectus magna"></TheCaption>
+				<div class="second-section__partners">
+					<img class="second-section__partner" src="@/assets/images/partner_logo_1.webp" alt=".">
+					<img class="second-section__partner" src="@/assets/images/partner_logo_2.webp" alt=".">
+					<img class="second-section__partner" src="@/assets/images/partner_logo_3.webp" alt=".">
+					<img class="second-section__partner" src="@/assets/images/partner_logo_4.webp" alt=".">
+					<img class="second-section__partner" src="@/assets/images/partner_logo_5.webp" alt=".">
 				</div>
 			</div>
 		</div>
@@ -81,6 +85,17 @@ export default defineComponent({
 		width: 100%;
 		height: 1px;
 		background: rgba($second-color, 0.69);
+	}
+
+	&__partners {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__partner {
+		height: 50px;
+		display: block;
 	}
 }
 </style>

@@ -71,7 +71,7 @@ export default defineComponent({
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 28px;
 
     &__item {
         border-radius: 10px;
@@ -83,7 +83,7 @@ export default defineComponent({
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px;
+        padding: 16px 24px 10px 16px;
         cursor: pointer;
     }
 
@@ -103,7 +103,7 @@ export default defineComponent({
         overflow: hidden;
         transition: grid-template-rows 0.5s;
         padding-left: 72px;
-        padding-right: 16px;
+        padding-right: 98px;
 
         &--active {
             grid-template-rows: 1fr;
@@ -119,6 +119,12 @@ export default defineComponent({
         min-height: 0;
         transition: visibility 1s;
         visibility: hidden;
+        text-transform: capitalize;
+        color: $base-color;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
     }
 }
 </style>

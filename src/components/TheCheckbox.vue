@@ -52,7 +52,7 @@ export default defineComponent({
             display: none;
             width: 6px;
             height: 12px;
-            margin-top: -5px;
+            margin-top: -4px;
             border: solid $green-color;
             border-width: 0 3px 3px 0;
             transform: rotate(45deg);

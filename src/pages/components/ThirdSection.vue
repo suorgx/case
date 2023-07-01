@@ -21,7 +21,9 @@ export default defineComponent({
                 <p class="third-section__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit ut&nbsp;aliquam, purus sit amet luctus venenatis, lectus magna.
                 </p>
-                <TheAccordion></TheAccordion>
+                <div class="third-section__accordion">
+                    <TheAccordion></TheAccordion>
+                </div>
             </div>
         </div>
     </section>
@@ -63,6 +65,10 @@ export default defineComponent({
         line-height: 150%;
         text-transform: capitalize;
         width: 92%;
+    }
+
+    &__accordion {
+        margin-top: 26px;
     }
 }
 </style>

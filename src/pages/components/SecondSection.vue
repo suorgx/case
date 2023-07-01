@@ -19,7 +19,7 @@ export default defineComponent({
 		<div class="container">
 			<div class="second-section__wrapper">
 				<div class="second-section__head">
-					<TheCaption text="lectus magna" base-color></TheCaption>
+					<TheCaption tag="h3" text="lectus magna" base-color></TheCaption>
 					Explore All
 				</div>
 				<div class="second-section__main">
@@ -37,8 +37,8 @@ export default defineComponent({
 				<div class="second-section__divider"></div>
 				<div class="second-section__partners">
 					<img class="second-section__partner" src="@/assets/images/partner_logo_1.webp" alt=".">
-					<img class="second-section__partner" src="@/assets/images/partner_logo_2.webp" alt=".">
 					<img class="second-section__partner" src="@/assets/images/partner_logo_3.webp" alt=".">
+					<img class="second-section__partner" src="@/assets/images/partner_logo_2.webp" alt=".">
 					<img class="second-section__partner" src="@/assets/images/partner_logo_4.webp" alt=".">
 					<img class="second-section__partner" src="@/assets/images/partner_logo_5.webp" alt=".">
 				</div>

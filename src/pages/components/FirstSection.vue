@@ -48,6 +48,7 @@ export default defineComponent({
 		flex-direction: column;
 		gap: 28px;
 		position: relative;
+    padding-top: 9px;
 	}
 
 	&__right {

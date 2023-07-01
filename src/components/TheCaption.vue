@@ -19,8 +19,11 @@ export default defineComponent({
 <template>
 	<component
 		:is="tag"
-		class="the-caption"
-		:class="baseColor ? 'the-caption--base-color' : 'the-caption--second-color'"
+    :class="[
+        {'the-caption--base-color': baseColor},
+        {'the-caption--second-color': !baseColor},
+        `the-caption--${tag}`,
+        'the-caption']"
 	>
 		{{ text }}
 	</component>
@@ -31,6 +34,14 @@ export default defineComponent({
 	color: $second-color;
 	font-size: 58px;
 	font-weight: 700;
+
+  &--h2 {
+    font-size: 58px;
+  }
+
+  &--h3 {
+    font-size: 50px;
+  }
 
 	&--base-color {
 		color: $base-color;

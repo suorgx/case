@@ -41,7 +41,7 @@ export default defineComponent({
 		width: 100%;
 		height: 280px;
 		display: block;
-		object-fit: none;
+		object-fit: cover;
 	}
 
 	&__info {

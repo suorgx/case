@@ -24,10 +24,10 @@ export default defineComponent({
                     venenatis, lectus magna fringilla urna, porttitor.
                 </p>
                 <div class="first-section__search">
-                    <TheInput></TheInput>
+                    <TheInput placeholder="Search by location..." icon></TheInput>
                 </div>
             </div>
-            <img class="first-section__right" src="@/assets/images/content_image.webp" alt=".">
+            <img class="first-section__right" src="@/assets/images/first_section_image.webp" alt=".">
         </div>
     </section>
 </template>

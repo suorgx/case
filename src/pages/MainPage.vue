@@ -2,12 +2,14 @@
 import {defineComponent} from 'vue'
 import FirstSection from './components/FirstSection.vue'
 import SecondSection from './components/SecondSection.vue'
+import ThirdSection from '@/pages/components/ThirdSection.vue'
 
 export default defineComponent({
     name: "MainPage",
     components: {
         FirstSection,
-        SecondSection
+        SecondSection,
+        ThirdSection
     }
 })
 </script>
@@ -16,6 +18,7 @@ export default defineComponent({
     <main class="main-page">
         <FirstSection></FirstSection>
         <SecondSection></SecondSection>
+        <ThirdSection></ThirdSection>
     </main>
 </template>
 

@@ -6,14 +6,18 @@ export default defineComponent({
     name: "TheInput",
     components: {
         TheMainButton
+    },
+    props: {
+        icon: Boolean,
+        placeholder: String
     }
 })
 </script>
 
 <template>
     <form class="the-input">
-        <img class="the-input__icon" src="@/assets/images/icon_form_location.svg" alt=".">
-        <input class="the-input__input" placeholder="Search by location..."/>
+        <img v-if="icon" class="the-input__icon" src="@/assets/images/icon_form_location.svg" alt=".">
+        <input class="the-input__input" type="text" :placeholder="placeholder"/>
         <TheMainButton text="Search Now"></TheMainButton>
     </form>
 </template>
@@ -45,6 +49,7 @@ export default defineComponent({
         font-size: 20px;
         font-weight: 400;
         letter-spacing: 0.2px;
+        display: block;
 
         &::placeholder {
             font-size: 20px;

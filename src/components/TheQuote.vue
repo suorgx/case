@@ -69,6 +69,7 @@ export default defineComponent({
             height: 40px;
             display: block;
             flex-shrink: 0;
+            margin-top: -5px;
         }
     }
 }

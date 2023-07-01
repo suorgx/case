@@ -2,53 +2,54 @@
 import {defineComponent} from 'vue'
 
 export default defineComponent({
-	name: "TheCaption",
-	props: {
-		text: String,
-		baseColor: {
-			type: Boolean,
-			default: false
-		},
-		tag: {
-			type: String,
-			default: "h2"
-		}
-	}
+    name: "TheCaption",
+    props: {
+        text: String,
+        baseColor: {
+            type: Boolean,
+            default: false
+        },
+        tag: {
+            type: String,
+            default: "h2"
+        }
+    }
 })
 </script>
 <template>
-	<component
-		:is="tag"
-    :class="[
+    <component
+        :is="tag"
+        :class="[
+        'the-caption',
         {'the-caption--base-color': baseColor},
         {'the-caption--second-color': !baseColor},
-        `the-caption--${tag}`,
-        'the-caption']"
-	>
-		{{ text }}
-	</component>
+        `the-caption--${tag}`
+        ]"
+    >
+        {{ text }}
+    </component>
 </template>
 
 <style lang="scss">
 .the-caption {
-	color: $second-color;
-	font-size: 58px;
-	font-weight: 700;
-
-  &--h2 {
+    color: $second-color;
     font-size: 58px;
-  }
+    font-weight: 700;
 
-  &--h3 {
-    font-size: 50px;
-  }
+    &--h2 {
+        font-size: 58px;
+    }
 
-	&--base-color {
-		color: $base-color;
-	}
+    &--h3 {
+        font-size: 50px;
+    }
 
-	&--second-color {
-		color: $second-color;
-	}
+    &--base-color {
+        color: $base-color;
+    }
+
+    &--second-color {
+        color: $second-color;
+    }
 }
 </style>

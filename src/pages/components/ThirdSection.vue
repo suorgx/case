@@ -1,13 +1,13 @@
 <script>
 import {defineComponent} from 'vue'
 import TheCaption from '@/components/TheCaption.vue'
-import TheCheckbox from '@/components/TheCheckbox.vue'
+import TheAccordion from '@/components/TheAccordion.vue'
 
 export default defineComponent({
     name: "ThirdSection",
     components: {
-        TheCaption,
-        TheCheckbox
+        TheAccordion,
+        TheCaption
     }
 })
 </script>
@@ -21,11 +21,7 @@ export default defineComponent({
                 <p class="third-section__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit ut&nbsp;aliquam, purus sit amet luctus venenatis, lectus magna.
                 </p>
-                <div class="third-section__checkboxes">
-                    <TheCheckbox></TheCheckbox>
-                    <TheCheckbox></TheCheckbox>
-                    <TheCheckbox></TheCheckbox>
-                </div>
+                <TheAccordion></TheAccordion>
             </div>
         </div>
     </section>
@@ -67,12 +63,6 @@ export default defineComponent({
         line-height: 150%;
         text-transform: capitalize;
         width: 92%;
-    }
-
-    &__checkboxes {
-        display: flex;
-        flex-direction: column;
-        gap: 22px;
     }
 }
 </style>

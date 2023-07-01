@@ -50,11 +50,11 @@ export default defineComponent({
 <template>
     <div class="the-accordion">
         <div class="the-accordion__item" v-for="(item, index) in items" :key="index">
-            <div class="the-accordion__header" @click="toggleItem(index)">
+            <div class="the-accordion__header">
                 <TheCheckbox :name="item.title"></TheCheckbox>
-                <span class="the-accordion__icon" :class="{ 'the-accordion__icon--active': item.isActive }">
+                <div @click="toggleItem(index)" class="the-accordion__icon" :class="{ 'the-accordion__icon--active': item.isActive }">
                     <img class="third-section__left" src="@/assets/images/icon_accordion_plus.svg" alt=".">
-                </span>
+                </div>
             </div>
             <div class="the-accordion__content" :class="{ 'the-accordion__content--active': item.isActive }">
                 <div class="the-accordion__expander">
@@ -90,7 +90,7 @@ export default defineComponent({
     &__icon {
         font-size: 20px;
         font-weight: bold;
-        transition: transform 0.5s ease-in-out;
+        transition: transform 0.3s;
 
         &--active {
             transform: rotate(45deg);

@@ -44,7 +44,9 @@ export default defineComponent({
     }
 
     &__left {
-        max-width: 460px;
+        max-width: 100%;
+        max-height: 300px;
+        object-fit: cover;
         width: 100%;
         flex-shrink: 0;
         display: block;
@@ -81,6 +83,12 @@ export default defineComponent({
 
         &__right {
             gap: 17px;
+        }
+
+        &__left {
+            max-width: 460px;
+            max-height: 728px;
+            object-fit: none;
         }
     }
 

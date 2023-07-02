@@ -64,7 +64,10 @@ export default defineComponent({
     &__right {
         max-width: 100%;
         width: 100%;
+        max-height: 300px;
+        object-fit: cover;
         display: block;
+        border-radius: 10px;
     }
 
     &__description {
@@ -86,6 +89,7 @@ export default defineComponent({
 
         &__right {
             max-width: 500px;
+            max-height: 573px;
         }
     }
 

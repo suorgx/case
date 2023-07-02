@@ -26,7 +26,7 @@ export default defineComponent({
     width: 100%;
     color: $base-color;
     padding-top: 25px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 
     &__wrapper {
         display: flex;
@@ -36,7 +36,7 @@ export default defineComponent({
 
     @media (min-width: $mobile) {
         padding-top: 50px;
-        padding-bottom: 100px;
+        padding-bottom: 80px;
 
         &__wrapper {
             gap: 54px;
@@ -44,8 +44,8 @@ export default defineComponent({
     }
 
     @media (min-width: $tablet) {
-        padding-top: 70px;
-        padding-bottom: 140px;
+        padding-top: 60px;
+        padding-bottom: 120px;
     }
 
     @media (min-width: $laptop) {

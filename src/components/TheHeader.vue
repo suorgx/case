@@ -18,7 +18,7 @@ export default defineComponent({
     <header class="the-header container">
         <TheLogo></TheLogo>
         <TheNav></TheNav>
-        <TheButton text="Contact"></TheButton>
+        <TheButton @click="$emit('openModal')" text="Contact"></TheButton>
     </header>
 </template>
 

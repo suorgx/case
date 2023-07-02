@@ -26,10 +26,11 @@ export default defineComponent({
         <div v-if="date" class="the-slide__date">
             {{ date }}
         </div>
-        <div v-if="title" class="the-slide__title">
+        <div v-if="date" class="the-slide__divider"></div>
+        <h4 v-if="title" class="the-slide__title">
             {{ title }}
-        </div>
-        <TheMainButton text="read more" size="s"></TheMainButton>
+        </h4>
+        <TheMainButton text="Read More" size="s"></TheMainButton>
     </div>
 </template>
 
@@ -44,6 +45,32 @@ export default defineComponent({
         height: 100%;
         object-fit: cover;
         margin-bottom: 30px;
+    }
+
+    &__date {
+        color: rgba($base-color, 0.69);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 110%;
+        margin-bottom: 8px;
+    }
+
+    &__divider {
+        max-width: 144px;
+        width: 100%;
+        height: 1px;
+        opacity: 0.699999988079071;
+        background: rgba($base-color, 0.69);
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        color: $base-color;
+        width: 91%;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 110%;
+        margin-bottom: 21px;
     }
 }
 </style>

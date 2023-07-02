@@ -76,7 +76,7 @@ export default defineComponent({
     display: flex;
 
     .swiper {
-        width: 90%;
+        width: 91%;
     }
 
     .swiper-button-prev, .swiper-button-next {
@@ -86,6 +86,24 @@ export default defineComponent({
         right: 0;
         bottom: 0;
         margin: 0;
+        border-radius: 5px;
+        background: rgba($green-color, 0.30);
+        width: 32px;
+        height: 32px;
+        overflow: hidden;
+
+        &:after {
+            content: '';
+            background: url('@/assets/images/icon_arrow_slider.svg') no-repeat center / 100%;
+            width: 16px;
+            height: 16px;
+            display: block;
+            flex-shrink: 0;
+        }
+    }
+
+    .swiper-button-next:after {
+        transform: rotate(180deg);
     }
 }
 </style>

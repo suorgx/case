@@ -7,7 +7,7 @@ export default defineComponent({
         text: String,
         size: {
             type: String,
-            default: 'm'
+            default: 'l'
         }
     }
 })
@@ -36,9 +36,15 @@ export default defineComponent({
     flex-shrink: 0;
     letter-spacing: 1.2px;
 
-    &--size-m {
+    &--size-l {
         padding: 25px 30px;
         font-size: 20px;
+        border-radius: 10px;
+    }
+
+    &--size-m {
+        padding: 18px 30px;
+        font-size: 18px;
         border-radius: 10px;
     }
 

@@ -15,7 +15,7 @@ export default defineComponent({
 <template>
     <section class="fourth-section">
         <div class="container fourth-section__wrapper">
-            <TheCaption tag="h3" text="Our Blogs" base-color></TheCaption>
+            <TheCaption text="Our Blogs" base-color></TheCaption>
             <TheSlider></TheSlider>
         </div>
     </section>

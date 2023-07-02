@@ -4,6 +4,7 @@ import FirstSection from './components/FirstSection.vue'
 import SecondSection from './components/SecondSection.vue'
 import ThirdSection from '@/pages/components/ThirdSection.vue'
 import FourthSection from '@/pages/components/FourthSection.vue'
+import FifthSection from '@/pages/components/FifthSection.vue'
 
 export default defineComponent({
     name: "MainPage",
@@ -11,7 +12,8 @@ export default defineComponent({
         FirstSection,
         SecondSection,
         ThirdSection,
-        FourthSection
+        FourthSection,
+        FifthSection
     }
 })
 </script>
@@ -22,6 +24,7 @@ export default defineComponent({
         <SecondSection></SecondSection>
         <ThirdSection></ThirdSection>
         <FourthSection></FourthSection>
+        <FifthSection></FifthSection>
     </main>
 </template>
 

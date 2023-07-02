@@ -18,7 +18,7 @@ export default defineComponent({
     <section class="first-section">
         <div class="container first-section__wrapper">
             <div class="first-section__left">
-                <TheCaption text="Lectus Magna Fringilla Urna, Porttitor"></TheCaption>
+                <TheCaption tag="h1" text="Lectus Magna Fringilla Urna, Porttitor"></TheCaption>
                 <p class="first-section__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit ut&nbsp;aliquam, purus sit amet luctus
                     venenatis, lectus magna fringilla urna, porttitor.

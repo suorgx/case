@@ -12,6 +12,10 @@ export default defineComponent({
         tag: {
             type: String,
             default: "h2"
+        },
+        font: {
+            type: String,
+            default: 'base'
         }
     }
 })
@@ -23,7 +27,8 @@ export default defineComponent({
         'the-caption',
         {'the-caption--base-color': baseColor},
         {'the-caption--second-color': !baseColor},
-        `the-caption--${tag}`
+        `the-caption--${tag}`,
+        `the-caption--${font}-font`
         ]"
     >
         {{ text }}
@@ -36,12 +41,29 @@ export default defineComponent({
     font-size: 58px;
     font-weight: 700;
 
-    &--h2 {
+    &--h1 {
         font-size: 58px;
     }
 
-    &--h3 {
+    &--h2 {
         font-size: 50px;
+    }
+
+    &--h3 {
+        font-size: 45px;
+    }
+
+    &--base-font {
+        font-family: $base-font;
+    }
+
+    &--second-font {
+        font-family: $second-font;
+    }
+
+    &--third-font {
+        font-family: $third-font;
+        letter-spacing: 0.6px;
     }
 
     &--base-color {

@@ -19,7 +19,7 @@ export default defineComponent({
         <div class="container">
             <div class="second-section__wrapper">
                 <div class="second-section__head">
-                    <TheCaption tag="h3" text="lectus magna" base-color></TheCaption>
+                    <TheCaption text="lectus magna" base-color></TheCaption>
                     <a class="second-section__link" href="#">
                         Explore All
                     </a>

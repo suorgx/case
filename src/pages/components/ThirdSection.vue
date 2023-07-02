@@ -17,7 +17,7 @@ export default defineComponent({
         <div class="container third-section__wrapper">
             <img class="third-section__left" src="../../assets/images/third_section_image.webp" alt=".">
             <div class="third-section__right">
-                <TheCaption tag="h3" text="Purus Sit Amet Luctus" base-color></TheCaption>
+                <TheCaption text="Purus Sit Amet Luctus" base-color></TheCaption>
                 <p class="third-section__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit ut&nbsp;aliquam, purus sit amet luctus venenatis, lectus magna.
                 </p>

@@ -2,14 +2,14 @@
 import {defineComponent} from 'vue'
 import TheCaption from '@/components/TheCaption.vue'
 import TheMainButton from '@/components/TheMainButton.vue'
-import TheInput from '@/components/TheInput.vue'
+import TheSearch from '@/components/TheSearch.vue'
 
 export default defineComponent({
     name: "FirstSection",
     components: {
         TheMainButton,
         TheCaption,
-        TheInput
+        TheSearch
     }
 })
 </script>
@@ -24,7 +24,7 @@ export default defineComponent({
                     venenatis, lectus magna fringilla urna, porttitor.
                 </p>
                 <div class="first-section__search">
-                    <TheInput placeholder="Search by location..." icon></TheInput>
+                    <TheSearch placeholder="Search by location..." icon></TheSearch>
                 </div>
             </div>
             <img class="first-section__right" src="@/assets/images/first_section_image.webp" alt=".">

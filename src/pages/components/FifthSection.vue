@@ -1,12 +1,12 @@
 <script>
 import {defineComponent} from 'vue'
 import TheCaption from '@/components/TheCaption.vue'
-import TheInputJoin from '@/components/TheInputJoin.vue'
+import TheJoin from '@/components/TheJoin.vue'
 
 export default defineComponent({
     name: "FifthSection",
     components: {
-        TheInputJoin,
+        TheJoin,
         TheCaption
     }
 })
@@ -20,7 +20,7 @@ export default defineComponent({
                 To join the worldwide community
             </p>
             <div class="fifth-section__input">
-                <TheInputJoin></TheInputJoin>
+                <TheJoin></TheJoin>
             </div>
         </div>
     </section>

@@ -1,11 +1,13 @@
 <script>
 import {defineComponent} from 'vue'
 import TheCaption from '@/components/TheCaption.vue'
+import TheForm from '@/components/TheForm.vue'
 
 export default defineComponent({
     name: "SixthSection",
     components: {
-        TheCaption
+        TheCaption,
+        TheForm
     }
 })
 </script>
@@ -37,7 +39,7 @@ export default defineComponent({
                     </div>
                 </div>
                 <div class="sixth-section__right">
-                    right
+                    <TheForm></TheForm>
                 </div>
             </div>
         </div>

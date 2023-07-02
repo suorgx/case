@@ -1,8 +1,13 @@
 <script>
 import {defineComponent} from 'vue'
+import TheForm from '@/components/TheForm.vue'
+import TheCaption from "@/components/TheCaption.vue";
 
 export default defineComponent({
     name: "TheModal",
+    components: {
+        TheForm
+    },
     props: {
         isVisible: Boolean
     }
@@ -19,7 +24,7 @@ export default defineComponent({
             <button class="the-modal__close" @click="$emit('closeModal')">
                 <img class="the-modal__img" src="@/assets/images/icon_accordion_plus.svg" alt=".">
             </button>
-            the modal
+            <TheForm></TheForm>
         </div>
     </div>
 </template>
@@ -47,6 +52,8 @@ export default defineComponent({
         border-radius: 10px;
         background: $second-color;
         position: relative;
+        max-width: 675px;
+        width: 100%;
     }
 
     &__close {

@@ -2,38 +2,35 @@
 import {defineComponent} from 'vue'
 
 export default defineComponent({
-    name: "TheInput",
+    name: "TheTextarea",
     props: {
-        placeholder: String,
-        required: Boolean,
-        border: Boolean,
-        type: {
-            type: String,
-            default: 'text'
-        }
+        placeholder: String
     }
 })
 </script>
 
 <template>
-    <input :class="['the-input', {'the-input--border': border}]"
-           :type="type"
-           :placeholder="placeholder"
-           :required="required"
+    <textarea class="the-textarea"
+              rows="7"
+              :placeholder="placeholder"
     />
 </template>
 
 <style lang="scss">
-.the-input {
+.the-textarea {
     background: transparent;
     width: 100%;
     height: 100%;
-    border: none;
     outline: none;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 0.2px;
     display: block;
+    border-radius: 5px;
+    border: 1px solid rgba($green-color, 0.30);
+    background: $second-color;
+    padding: 16px;
+    resize: none;
 
     &::placeholder {
         font-size: 20px;
@@ -46,13 +43,6 @@ export default defineComponent({
     &:disabled {
         opacity: 0.1;
         pointer-events: none;
-    }
-
-    &--border {
-        border-radius: 5px;
-        border: 1px solid rgba($green-color, 0.30);
-        background: $second-color;
-        padding: 16px;
     }
 }
 </style>

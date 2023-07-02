@@ -33,7 +33,9 @@ export default defineComponent({
     color: $second-color;
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
     justify-content: space-between;
+    gap: 10px;
 
     &__info {
         display: flex;
@@ -42,25 +44,26 @@ export default defineComponent({
     }
 
     &__name {
-        font-size: 28px;
+        font-size: 22px;
         font-weight: 700;
     }
 
     &__position {
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 500;
         opacity: 0.8;
     }
 
     &__quote {
-        font-size: 28px;
+        font-size: 22px;
         color: rgba($second-color, 0.8);
         font-weight: 700;
         line-height: 150%;
         max-width: 665px;
         display: flex;
         align-items: flex-start;
-        gap: 16px;
+        flex-direction: column;
+        gap: 6px;
 
         &::before {
             content: '';
@@ -70,6 +73,24 @@ export default defineComponent({
             display: block;
             flex-shrink: 0;
             margin-top: -5px;
+        }
+    }
+
+    @media (min-width: $mobile) {
+        flex-direction: row;
+
+        &__name {
+            font-size: 28px;
+        }
+
+        &__position {
+            font-size: 18px;
+        }
+
+        &__quote {
+            font-size: 28px;
+            flex-direction: row;
+            gap: 16px;
         }
     }
 }

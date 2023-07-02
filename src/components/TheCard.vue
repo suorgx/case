@@ -39,16 +39,16 @@ export default defineComponent({
 
     &__image {
         width: 100%;
-        height: 280px;
+        height: 220px;
         display: block;
         object-fit: cover;
     }
 
     &__info {
-        padding: 32px;
+        padding: 16px;
         display: flex;
         flex-direction: column;
-        gap: 22px;
+        gap: 11px;
     }
 
     &__divider {
@@ -60,22 +60,45 @@ export default defineComponent({
 
     &__price {
         color: $base-color;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 700;
         line-height: 100%;
     }
 
     &__name {
         color: $base-color;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 700;
     }
 
     &__chips {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
-        gap: 10px;
+        gap: 5px;
         align-items: center;
+    }
+
+    @media (min-width: $mobile) {
+        &__image {
+            height: 280px;
+        }
+
+        &__info {
+            padding: 32px;
+            gap: 22px;
+        }
+
+        &__price {
+            font-size: 24px;
+        }
+
+        &__name {
+            font-size: 20px;
+        }
+
+        &__chips {
+            gap: 10px;
+        }
     }
 }
 </style>

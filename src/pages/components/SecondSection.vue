@@ -51,17 +51,17 @@ export default defineComponent({
 
 <style lang="scss">
 .second-section {
-    padding-top: 150px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 40px;
     width: 100%;
     min-height: 40vh;
-    background: linear-gradient(to bottom, $second-color 37.8%, $base-color 37.8%);
+    background: linear-gradient(to bottom, $second-color 12.8%, $base-color 12.8%);
 
     &__wrapper {
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 80px;
+        gap: 40px;
     }
 
     &__head {
@@ -79,8 +79,8 @@ export default defineComponent({
 
     &__cards {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
     }
 
     &__divider {
@@ -96,13 +96,13 @@ export default defineComponent({
     }
 
     &__partner {
-        height: 50px;
+        height: 20px;
         display: block;
     }
 
     &__link {
         color: $base-color;
-        font-size: 16px;
+        font-size: 0;
         font-weight: 400;
         text-decoration: none;
         display: flex;
@@ -116,6 +116,57 @@ export default defineComponent({
             height: 24px;
             display: block;
             flex-shrink: 0;
+        }
+    }
+
+    @media (min-width: $mobile) {
+        background: linear-gradient(to bottom, $second-color 26%, $base-color 26%);
+        padding-top: 80px;
+        padding-bottom: 50px;
+
+        &__wrapper {
+            gap: 50px;
+        }
+
+        &__cards {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        &__link {
+            font-size: 16px;
+        }
+
+        &__partner {
+            height: 30px;
+        }
+    }
+
+    @media (min-width: $tablet) {
+        background: linear-gradient(to bottom, $second-color 37.8%, $base-color 37.8%);
+        padding-top: 100px;
+        padding-bottom: 70px;
+
+        &__wrapper {
+            gap: 60px;
+        }
+
+        &__cards {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        &__partner {
+            height: 50px;
+        }
+    }
+
+    @media (min-width: $laptop) {
+        padding-top: 150px;
+        padding-bottom: 80px;
+
+        &__wrapper {
+            gap: 80px;
         }
     }
 }

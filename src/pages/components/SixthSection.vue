@@ -19,10 +19,10 @@ export default defineComponent({
             <div class="sixth-section__wrapper">
                 <div class="sixth-section__left">
                     <div class="sixth-section__contacts">
-                        <a class="sixth-section__contact">
+                        <p class="sixth-section__contact">
                             <img class="sixth-section__contact-icon" src="@/assets/images/address_icon.svg" alt=".">
                             99 something street, City, Country
-                        </a>
+                        </p>
                         <a class="sixth-section__contact" href="tel:+998999999999">
                             <img class="sixth-section__contact-icon" src="@/assets/images/phone_icon.svg" alt=".">
                             +998 (99) 999 99 99
@@ -33,7 +33,7 @@ export default defineComponent({
                         </a>
                     </div>
                     <div class="sixth-section__map">
-                        <iframe width="100%" height="272" frameborder="0" scrolling="no" marginheight="0"
+                        <iframe title="Google Map" width="100%" height="272" frameborder="0" scrolling="no" marginheight="0"
                                 marginwidth="0"
                                 src="https://maps.google.com/maps?width=100%25&amp;height=272&amp;hl=en&amp;q=Tashkent+(Tashkent)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                     </div>

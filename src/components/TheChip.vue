@@ -15,7 +15,9 @@ export default defineComponent({
 
 <template>
     <div class="the-chip">
-        <img class="the-chip__icon" :src="`src/assets/images/card_icon_${icon}.svg`" alt=""/>
+        <img v-if="icon === 'link'" class="the-chip__icon" src="@/assets/images/card_icon_link.svg" alt=""/>
+        <img v-if="icon === 'bath'" class="the-chip__icon" src="@/assets/images/card_icon_bath.svg" alt=""/>
+        <img v-if="icon === 'bed'" class="the-chip__icon" src="@/assets/images/card_icon_bed.svg" alt=""/>
         <div class="the-chip__name">
             {{ text }}
         </div>

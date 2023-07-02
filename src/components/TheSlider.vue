@@ -41,28 +41,28 @@ export default defineComponent({
                 <TheSlide
                     date="19 July 2022"
                     title="Introduction To Real Estate Investing"
-                    img="slide_image_1.webp"
+                    img="1"
                 ></TheSlide>
             </SwiperSlide>
             <SwiperSlide>
                 <TheSlide
                     date="14 March 2022"
                     title="How I Creatively Got Into Real Estate (Twice)"
-                    img="slide_image_2.webp"
+                    img="2"
                 ></TheSlide>
             </SwiperSlide>
             <SwiperSlide>
                 <TheSlide
                     date="28 February 2022"
                     title="The Power Of Real Estate To Create Wealth"
-                    img="slide_image_3.webp"
+                    img="3"
                 ></TheSlide>
             </SwiperSlide>
             <SwiperSlide>
                 <TheSlide
                     date="19 July 2024"
                     title="Introduction To Real Estate Investing 2"
-                    img="slide_image_1.webp"
+                    img="4"
                 ></TheSlide>
             </SwiperSlide>
         </Swiper>

@@ -17,19 +17,16 @@ export default defineComponent({
 
 <template>
     <div class="the-slide">
-        <img
-            v-if="img"
-            class="the-slide__img"
-            :src="`src/assets/images/${img}`"
-            alt="."
-        >
+        <img v-if="img === '1'" class="the-slide__img" src="@/assets/images/slide_image_1.webp" alt=".">
+        <img v-if="img === '2'" class="the-slide__img" src="@/assets/images/slide_image_2.webp" alt=".">
+        <img v-if="img === '3'" class="the-slide__img" src="@/assets/images/slide_image_3.webp" alt=".">
         <div v-if="date" class="the-slide__date">
             {{ date }}
         </div>
         <div v-if="date" class="the-slide__divider"></div>
-        <h4 v-if="title" class="the-slide__title">
+        <p v-if="title" class="the-slide__title">
             {{ title }}
-        </h4>
+        </p>
         <TheMainButton text="Read More" size="s"></TheMainButton>
     </div>
 </template>

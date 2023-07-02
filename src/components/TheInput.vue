@@ -30,13 +30,13 @@ export default defineComponent({
     height: 100%;
     border: none;
     outline: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.2px;
     display: block;
 
     &::placeholder {
-        font-size: 20px;
+        font-size: 16px;
         font-family: $base-font;
         font-weight: 400;
         color: rgba($base-color, 0.5);
@@ -52,7 +52,19 @@ export default defineComponent({
         border-radius: 5px;
         border: 1px solid rgba($green-color, 0.30);
         background: $second-color;
-        padding: 16px;
+        padding: 8px;
+    }
+
+    @media (min-width: $mobile) {
+        font-size: 20px;
+
+        &::placeholder {
+            font-size: 20px;
+        }
+
+        &--border {
+            padding: 16px;
+        }
     }
 }
 </style>

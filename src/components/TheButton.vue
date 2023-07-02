@@ -18,14 +18,14 @@ export default defineComponent({
 <style lang="scss">
 .the-button {
     display: flex;
-    padding: 20px 30px;
+    padding: 13px 26px;
     align-items: center;
     gap: 10px;
     border-radius: 5px;
     background: $second-color;
     color: $base-color;
     border: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 100%;
     user-select: none;
@@ -47,6 +47,16 @@ export default defineComponent({
         background: #D3D4D4;
         color: rgba(255, 255, 255, 0.60);
         cursor: auto;
+    }
+
+    @media (min-width: $mobile) {
+        padding: 16px 28px;
+        font-size: 18px;
+    }
+
+    @media (min-width: $tablet) {
+        padding: 20px 30px;
+        font-size: 20px;
     }
 }
 </style>

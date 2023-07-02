@@ -22,18 +22,18 @@ export default defineComponent({
     width: 100%;
     height: 100%;
     outline: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.2px;
     display: block;
     border-radius: 5px;
     border: 1px solid rgba($green-color, 0.30);
     background: $second-color;
-    padding: 16px;
+    padding: 8px;
     resize: none;
 
     &::placeholder {
-        font-size: 20px;
+        font-size: 16px;
         font-family: $base-font;
         font-weight: 400;
         color: rgba($base-color, 0.5);
@@ -43,6 +43,15 @@ export default defineComponent({
     &:disabled {
         opacity: 0.1;
         pointer-events: none;
+    }
+
+    @media (min-width: $mobile) {
+        font-size: 20px;
+        padding: 16px;
+
+        &::placeholder {
+            font-size: 20px;
+        }
     }
 }
 </style>

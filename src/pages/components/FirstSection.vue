@@ -34,7 +34,7 @@ export default defineComponent({
 
 <style lang="scss">
 .first-section {
-    background: linear-gradient(to right, $base-color 61.5%, $green-color 61.5%);
+    background: linear-gradient(to right, $base-color 70.5%, $green-color 70.5%);
     width: 100%;
     color: $second-color;
     padding-top: 200px;
@@ -73,6 +73,10 @@ export default defineComponent({
         font-weight: 500;
         line-height: 110%;
         text-transform: capitalize;
+    }
+
+    @media (min-width: $mobile) {
+        background: linear-gradient(to right, $base-color 61.5%, $green-color 61.5%);
     }
 
 }

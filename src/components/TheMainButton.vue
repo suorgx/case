@@ -37,20 +37,20 @@ export default defineComponent({
     letter-spacing: 1.2px;
 
     &--size-l {
-        padding: 25px 30px;
-        font-size: 20px;
-        border-radius: 10px;
-    }
-
-    &--size-m {
-        padding: 18px 30px;
+        padding: 19px 28px;
         font-size: 18px;
         border-radius: 10px;
     }
 
-    &--size-s {
-        padding: 12px 24px;
+    &--size-m {
+        padding: 13px 26px;
         font-size: 16px;
+        border-radius: 10px;
+    }
+
+    &--size-s {
+        padding: 9px 18px;
+        font-size: 14px;
         border-radius: 5px;
     }
 
@@ -66,6 +66,40 @@ export default defineComponent({
         background: #D3DCD8;
         color: #F5F5F5;
         cursor: auto;
+    }
+
+    @media (min-width: $mobile) {
+        &--size-l {
+            padding: 20px 29px;
+            font-size: 19px;
+        }
+
+        &--size-m {
+            padding: 14px 38px;
+            font-size: 17px;
+        }
+
+        &--size-s {
+            padding: 10px 20px;
+            font-size: 15px;
+        }
+    }
+
+    @media (min-width: $tablet) {
+        &--size-l {
+            padding: 25px 30px;
+            font-size: 20px;
+        }
+
+        &--size-m {
+            padding: 18px 30px;
+            font-size: 18px;
+        }
+
+        &--size-s {
+            padding: 12px 24px;
+            font-size: 16px;
+        }
     }
 }
 </style>

@@ -24,12 +24,26 @@ export default defineComponent({
 
 <style lang="scss">
 .the-header {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-between;
     position: absolute;
+    background: transparent;
+    gap: 10px;
+
+    @media (min-width: $mobile) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap: 20px;
+    }
+
+    @media (min-width: $tablet) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        flex-direction: row;
+    }
 }
 </style>

@@ -36,13 +36,13 @@ export default defineComponent({
 <style lang="scss">
 .the-nav {
     color: $second-color;
-    font-size: 18px;
+    font-size: 14px;
 
     &__list {
         list-style-type: none;
         display: flex;
         align-items: center;
-        gap: 50px;
+        gap: 10px;
     }
 
     &__link {
@@ -50,6 +50,22 @@ export default defineComponent({
         color: inherit;
         display: block;
         opacity: 0.8;
+    }
+
+    @media (min-width: $mobile) {
+        font-size: 16px;
+
+        &__list {
+            gap: 40px;
+        }
+    }
+
+    @media (min-width: $tablet) {
+        font-size: 18px;
+
+        &__list {
+            gap: 50px;
+        }
     }
 }
 </style>

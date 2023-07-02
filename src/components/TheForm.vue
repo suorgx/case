@@ -28,6 +28,10 @@ export default defineComponent({
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 23px;
+    gap: 12px;
+
+    @media (min-width: $mobile) {
+        gap: 23px;
+    }
 }
 </style>

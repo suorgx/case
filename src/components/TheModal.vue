@@ -31,7 +31,9 @@ export default defineComponent({
 
 <style lang="scss">
 .the-modal {
-    width: 100vh;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
     height: 100vh;
     position: fixed;
     background: rgba($green-color, 0.3);
@@ -41,6 +43,7 @@ export default defineComponent({
     opacity: 0;
     visibility: hidden;
     transition:  opacity 0.3s, visibility 0.3s;
+    z-index: 1;
 
     &--visible {
         opacity: 1;
@@ -48,7 +51,7 @@ export default defineComponent({
     }
 
     &__wrapper {
-        padding: 40px;
+        padding: 10px;
         border-radius: 10px;
         background: $second-color;
         position: relative;
@@ -59,11 +62,32 @@ export default defineComponent({
     &__close {
         border: none;
         background: none;
-        position: absolute;
-        right: 11px;
-        top: 11px;
         transform: rotate(45deg);
         cursor: pointer;
+        margin-left: auto;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    &__img {
+        display: block;
+    }
+
+    @media (min-width: $mobile) {
+        padding-right: 10px;
+        padding-left: 10px;
+
+        &__wrapper {
+            padding: 40px;
+        }
+
+        &__close {
+            position: absolute;
+            right: 11px;
+            top: 11px;
+            margin-left: 0;
+            margin-bottom: 0;
+        }
     }
 }
 </style>

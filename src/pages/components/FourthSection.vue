@@ -25,13 +25,32 @@ export default defineComponent({
 .fourth-section {
     width: 100%;
     color: $base-color;
-    padding-top: 75px;
-    padding-bottom: 150px;
+    padding-top: 25px;
+    padding-bottom: 50px;
 
     &__wrapper {
         display: flex;
         flex-direction: column;
-        gap: 54px;
+        gap: 40px;
+    }
+
+    @media (min-width: $mobile) {
+        padding-top: 50px;
+        padding-bottom: 100px;
+
+        &__wrapper {
+            gap: 54px;
+        }
+    }
+
+    @media (min-width: $tablet) {
+        padding-top: 70px;
+        padding-bottom: 140px;
+    }
+
+    @media (min-width: $laptop) {
+        padding-top: 75px;
+        padding-bottom: 150px;
     }
 }
 </style>

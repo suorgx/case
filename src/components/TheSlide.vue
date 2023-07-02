@@ -41,15 +41,15 @@ export default defineComponent({
         max-height: 268px;
         height: 100%;
         object-fit: cover;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     &__date {
         color: rgba($base-color, 0.69);
-        font-size: 14px;
+        font-size: 11px;
         font-weight: 700;
         line-height: 110%;
-        margin-bottom: 8px;
+        margin-bottom: 6px;
     }
 
     &__divider {
@@ -58,16 +58,51 @@ export default defineComponent({
         height: 1px;
         opacity: 0.699999988079071;
         background: rgba($base-color, 0.69);
-        margin-bottom: 16px;
+        margin-bottom: 8px;
     }
 
     &__title {
         color: $base-color;
         width: 91%;
-        font-size: 24px;
+        font-size: 16px;
         font-weight: 700;
         line-height: 110%;
-        margin-bottom: 21px;
+        margin-bottom: 12px;
+    }
+
+    @media (min-width: $mobile) {
+        &__img {
+            margin-bottom: 20px;
+        }
+
+        &__date {
+            font-size: 12px;
+        }
+
+        &__title {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+    }
+
+    @media (min-width: $tablet) {
+        &__img {
+            margin-bottom: 30px;
+        }
+
+        &__date {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        &__divider {
+            margin-bottom: 16px;
+        }
+
+        &__title {
+            font-size: 24px;
+            margin-bottom: 21px;
+        }
     }
 }
 </style>

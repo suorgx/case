@@ -34,8 +34,8 @@ export default defineComponent({
             nextEl: next,
         }"
             :modules="modules"
-            :slides-per-view="3"
             :space-between="30"
+            :breakpoints="{ 600:{ slidesPerView: 1 }, 812:{ slidesPerView: 2, }, 1360:{ slidesPerView: 3, } }"
         >
             <SwiperSlide>
                 <TheSlide
@@ -76,7 +76,7 @@ export default defineComponent({
     display: flex;
 
     .swiper {
-        width: 91%;
+        width: 77%;
     }
 
     .swiper-button-prev, .swiper-button-next {
@@ -104,6 +104,18 @@ export default defineComponent({
 
     .swiper-button-next:after {
         transform: rotate(180deg);
+    }
+
+    @media (min-width: $mobile) {
+        .swiper {
+            width: 87%;
+        }
+    }
+
+    @media (min-width: $tablet) {
+        .swiper {
+            width: 91%;
+        }
     }
 }
 </style>

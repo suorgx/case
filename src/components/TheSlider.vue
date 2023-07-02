@@ -62,7 +62,7 @@ export default defineComponent({
                 <TheSlide
                     date="19 July 2024"
                     title="Introduction To Real Estate Investing 2"
-                    img="4"
+                    img="2"
                 ></TheSlide>
             </SwiperSlide>
         </Swiper>

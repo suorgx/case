@@ -33,9 +33,7 @@ export default defineComponent({
                         </a>
                     </div>
                     <div class="sixth-section__map">
-                        <iframe title="Google Map" width="100%" height="272" frameborder="0" scrolling="no" marginheight="0"
-                                marginwidth="0"
-                                src="https://maps.google.com/maps?width=100%25&amp;height=272&amp;hl=en&amp;q=Tashkent+(Tashkent)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        <iframe title="Tashkent Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95942.66986227602!2d69.1967956811091!3d41.28256795107951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2sus!4v1688302533441!5m2!1sen!2sus" width="100%" height="272" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="sixth-section__right">

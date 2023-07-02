@@ -54,12 +54,12 @@ export default defineComponent({
         padding-top: 0;
         display: flex;
         flex-direction: column;
-        gap: 17px;
+        gap: 40px;
     }
 
     &__description {
         color: $base-color;
-        font-size: 20px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 500;
         line-height: 150%;
@@ -68,12 +68,20 @@ export default defineComponent({
     }
 
     &__accordion {
-        margin-top: 26px;
+        margin-top: 0;
     }
 
     @media (min-width: $mobile) {
         padding-top: 100px;
         padding-bottom: 50px;
+
+        &__description {
+            font-size: 18px;
+        }
+
+        &__right {
+            gap: 17px;
+        }
     }
 
     @media (min-width: $tablet) {
@@ -82,6 +90,10 @@ export default defineComponent({
 
         &__wrapper {
             flex-direction: row;
+        }
+
+        &__description {
+            font-size: 19px;
         }
     }
 
@@ -99,6 +111,14 @@ export default defineComponent({
 
         &__right {
             padding-top: 12px;
+        }
+
+        &__description {
+            font-size: 20px;
+        }
+
+        &__accordion {
+            margin-top: 26px;
         }
     }
 }

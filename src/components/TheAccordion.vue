@@ -71,19 +71,19 @@ export default defineComponent({
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 10px;
 
     &__item {
         border-radius: 10px;
         background: $second-color;
-        box-shadow: 0 0 10px 0 rgba($base-color, 0.15);
+        box-shadow: 0 0 5px 0 rgba($base-color, 0.15);
     }
 
     &__header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 16px 24px 10px 16px;
+        padding: 8px 12px 5px 8px;
         cursor: pointer;
     }
 
@@ -91,6 +91,7 @@ export default defineComponent({
         font-size: 20px;
         font-weight: bold;
         transition: transform 0.3s;
+        flex-shrink: 0;
 
         &--active {
             transform: rotate(45deg);
@@ -102,12 +103,12 @@ export default defineComponent({
         grid-template-rows: 0fr;
         overflow: hidden;
         transition: grid-template-rows 0.5s;
-        padding-left: 72px;
-        padding-right: 98px;
+        padding-left: 52px;
+        padding-right: 52px;
 
         &--active {
             grid-template-rows: 1fr;
-            padding-bottom: 16px;
+            padding-bottom: 10px;
 
             #{$parent}__expander {
                 visibility: visible;
@@ -121,10 +122,35 @@ export default defineComponent({
         visibility: hidden;
         text-transform: capitalize;
         color: $base-color;
-        font-size: 16px;
+        font-size: 13px;
         font-style: normal;
         font-weight: 400;
         line-height: 110%;
+    }
+
+    @media (min-width: $mobile) {
+        gap: 28px;
+
+        &__content {
+            padding-left: 72px;
+            padding-right: 98px;
+
+            &--active {
+                padding-bottom: 16px;
+            }
+        }
+
+        &__expander {
+            font-size: 16px;
+        }
+
+        &__item {
+            box-shadow: 0 0 10px 0 rgba($base-color, 0.15);
+        }
+
+        &__header {
+            padding: 16px 24px 10px 16px;
+        }
     }
 }
 </style>

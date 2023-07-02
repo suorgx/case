@@ -25,9 +25,8 @@ export default defineComponent({
 
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 12px;
     cursor: pointer;
-    font-size: 22px;
     user-select: none;
 
     &__input {
@@ -65,11 +64,24 @@ export default defineComponent({
 
     &__name {
         color: $base-color;
-        font-size: 18px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 700;
         line-height: 150%;
         text-transform: capitalize;
+    }
+
+    @media (min-width: $mobile) {
+        gap: 24px;
+
+        &__checkmark {
+            height: 32px;
+            width: 32px;
+        }
+
+        &__name {
+            font-size: 18px;
+        }
     }
 }
 </style>

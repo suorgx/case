@@ -30,12 +30,16 @@ export default defineComponent({
     height: 100vh;
     position: fixed;
     background: rgba($green-color, 0.3);
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition:  opacity 0.3s, visibility 0.3s;
 
     &--visible {
-        display: flex;
+        opacity: 1;
+        visibility: visible;
     }
 
     &__wrapper {

@@ -40,6 +40,7 @@ export default defineComponent({
     color: $second-color;
     font-size: 58px;
     font-weight: 700;
+    width: fit-content;
 
     &--h1 {
         font-size: 58px;

@@ -34,16 +34,16 @@ export default defineComponent({
 
 <style lang="scss">
 .first-section {
-    background: linear-gradient(to right, $base-color 70.5%, $green-color 70.5%);
+    background: $base-color;
     width: 100%;
     color: $second-color;
-    padding-top: 200px;
-    padding-bottom: 100px;
+    padding-top: 180px;
+    padding-bottom: 50px;
 
     &__wrapper {
         display: flex;
-        gap: 98px;
-        flex-direction: row;
+        gap: 30px;
+        flex-direction: column;
         align-items: flex-start;
     }
 
@@ -56,27 +56,73 @@ export default defineComponent({
     }
 
     &__search {
-        position: absolute;
-        width: 131%;
-        bottom: -127px;
+        position: relative;
+        width: 100%;
+        bottom: 0;
     }
 
     &__right {
-        max-width: 603px;
+        max-width: 100%;
         width: 100%;
         display: block;
     }
 
     &__description {
         color: rgba($second-color, 0.8);
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 500;
         line-height: 110%;
         text-transform: capitalize;
     }
 
     @media (min-width: $mobile) {
+        padding-top: 280px;
+        padding-bottom: 80px;
+        background: linear-gradient(to right, $base-color 80%, $green-color 80%);
+
+        &__description {
+            font-size: 16px;
+        }
+
+        &__right {
+            max-width: 500px;
+        }
+    }
+
+    @media (min-width: $tablet) {
         background: linear-gradient(to right, $base-color 61.5%, $green-color 61.5%);
+        padding-top: 200px;
+        padding-bottom: 100px;
+
+        &__wrapper {
+            gap: 40px;
+            flex-direction: row;
+        }
+
+        &__description {
+            font-size: 17px;
+        }
+    }
+
+    @media (min-width: $laptop) {
+
+        &__wrapper {
+            gap: 98px;
+        }
+
+        &__right {
+            max-width: 603px;
+        }
+
+        &__search {
+            position: absolute;
+            width: 131%;
+            bottom: -127px;
+        }
+
+        &__description {
+            font-size: 18px;
+        }
     }
 
 }

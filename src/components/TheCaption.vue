@@ -43,15 +43,15 @@ export default defineComponent({
     width: fit-content;
 
     &--h1 {
-        font-size: 58px;
+        font-size: 40px;
     }
 
     &--h2 {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     &--h3 {
-        font-size: 45px;
+        font-size: 25px;
     }
 
     &--base-font {
@@ -73,6 +73,34 @@ export default defineComponent({
 
     &--second-color {
         color: $second-color;
+    }
+
+    @media (min-width: $mobile) {
+        &--h1 {
+            font-size: 45px;
+        }
+
+        &--h2 {
+            font-size: 40px;
+        }
+
+        &--h3 {
+            font-size: 30px;
+        }
+    }
+
+    @media (min-width: $tablet) {
+        &--h1 {
+            font-size: 58px;
+        }
+
+        &--h2 {
+            font-size: 50px;
+        }
+
+        &--h3 {
+            font-size: 45px;
+        }
     }
 }
 </style>

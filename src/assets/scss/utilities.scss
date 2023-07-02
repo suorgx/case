@@ -1,0 +1,19 @@
+.show--default {
+    display: block !important;
+}
+
+.hide--default {
+    display: none !important;
+}
+
+.show--laptop {
+    @media (min-width: $laptop) {
+        display: block !important;
+    }
+}
+
+.hide--laptop {
+    @media (min-width: $laptop) {
+        display: none !important;
+    }
+}

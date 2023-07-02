@@ -33,25 +33,25 @@ export default defineComponent({
 .third-section {
     width: 100%;
     color: $base-color;
-    padding-top: 150px;
-    padding-bottom: 75px;
+    padding-top: 50px;
+    padding-bottom: 25px;
 
     &__wrapper {
         display: flex;
-        gap: 80px;
-        flex-direction: row;
+        gap: 40px;
+        flex-direction: column-reverse;
         align-items: flex-start;
     }
 
     &__left {
-        max-width: 572px;
+        max-width: 460px;
         width: 100%;
         flex-shrink: 0;
         display: block;
     }
 
     &__right {
-        padding-top: 12px;
+        padding-top: 0;
         display: flex;
         flex-direction: column;
         gap: 17px;
@@ -69,6 +69,37 @@ export default defineComponent({
 
     &__accordion {
         margin-top: 26px;
+    }
+
+    @media (min-width: $mobile) {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    @media (min-width: $tablet) {
+        padding-top: 140px;
+        padding-bottom: 70px;
+
+        &__wrapper {
+            flex-direction: row;
+        }
+    }
+
+    @media (min-width: $laptop) {
+        padding-top: 150px;
+        padding-bottom: 75px;
+
+        &__wrapper {
+            gap: 80px;
+        }
+
+        &__left {
+            max-width: 572px;
+        }
+
+        &__right {
+            padding-top: 12px;
+        }
     }
 }
 </style>

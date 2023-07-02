@@ -32,12 +32,11 @@ export default defineComponent({
     justify-content: space-between;
     position: absolute;
     background: transparent;
-    gap: 10px;
+    gap: 20px;
 
     @media (min-width: $mobile) {
         padding-top: 40px;
         padding-bottom: 40px;
-        gap: 20px;
     }
 
     @media (min-width: $tablet) {

@@ -42,7 +42,7 @@ export default defineComponent({
 
     &__wrapper {
         display: flex;
-        gap: 30px;
+        gap: 40px;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -50,9 +50,9 @@ export default defineComponent({
     &__left {
         display: flex;
         flex-direction: column;
-        gap: 28px;
+        gap: 40px;
         position: relative;
-        padding-top: 9px;
+        padding-top: 0;
     }
 
     &__search {
@@ -95,8 +95,11 @@ export default defineComponent({
         padding-bottom: 100px;
 
         &__wrapper {
-            gap: 40px;
             flex-direction: row;
+        }
+
+        &__left {
+            gap: 28px;
         }
 
         &__description {
@@ -122,6 +125,10 @@ export default defineComponent({
 
         &__description {
             font-size: 18px;
+        }
+
+        &__left {
+            padding-top: 9px;
         }
     }
 

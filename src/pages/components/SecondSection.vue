@@ -51,8 +51,8 @@ export default defineComponent({
 
 <style lang="scss">
 .second-section {
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     width: 100%;
     min-height: 40vh;
     background: linear-gradient(to bottom, $second-color 12.8%, $base-color 12.8%);
@@ -74,7 +74,7 @@ export default defineComponent({
     &__main {
         display: flex;
         flex-direction: column;
-        gap: 43px;
+        gap: 40px;
     }
 
     &__cards {
@@ -126,6 +126,10 @@ export default defineComponent({
 
         &__wrapper {
             gap: 50px;
+        }
+
+        &__main {
+            gap: 43px;
         }
 
         &__cards {

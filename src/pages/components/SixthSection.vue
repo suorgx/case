@@ -48,19 +48,19 @@ export default defineComponent({
 .sixth-section {
     width: 100%;
     color: $base-color;
-    padding-top: 99px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     &__title {
-        margin-bottom: 80px;
+        margin-bottom: 40px;
         margin-right: auto;
         margin-left: auto;
     }
 
     &__wrapper {
         display: flex;
-        gap: 80px;
-        flex-direction: row;
+        gap: 40px;
+        flex-direction: column;
         align-items: flex-start;
     }
 
@@ -80,7 +80,7 @@ export default defineComponent({
     &__contacts {
         display: flex;
         flex-direction: column;
-        gap: 22px;
+        gap: 16px;
     }
 
     &__contact {
@@ -88,7 +88,7 @@ export default defineComponent({
         align-items: center;
         gap: 10px;
         color: $base-color;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 600;
         text-decoration: none;
 
@@ -102,6 +102,53 @@ export default defineComponent({
     &__map {
         border-radius: 10px;
         overflow: hidden;
+    }
+
+    @media (min-width: $mobile) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &__title {
+            margin-bottom: 50px;
+        }
+
+        &__wrapper {
+            gap: 50px;
+        }
+
+        &__contact {
+            font-size: 20px;
+        }
+
+        &__contacts {
+            gap: 22px;
+        }
+    }
+
+    @media (min-width: $tablet) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        &__title {
+            margin-bottom: 65px;
+        }
+
+        &__wrapper {
+            flex-direction: row;
+        }
+    }
+
+    @media (min-width: $laptop) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        &__title {
+            margin-bottom: 80px;
+        }
+
+        &__wrapper {
+            gap: 80px;
+        }
     }
 }
 </style>

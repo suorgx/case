@@ -26,12 +26,17 @@ export default defineComponent({
 .the-join {
     border-radius: 10px;
     background: $second-color;
-    padding: 5px 5px 5px 30px;
+    padding: 5px;
     color: $base-color;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     width: 100%;
     border: 1px solid rgba(125, 155, 143, 0.30);
+
+    @media (min-width: $mobile) {
+        padding: 5px 5px 5px 30px;
+        gap: 10px;
+    }
 }
 </style>

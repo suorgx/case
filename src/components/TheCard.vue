@@ -12,7 +12,14 @@ export default defineComponent({
 
 <template>
     <div class="the-card">
-        <img class="the-card__image" src="@/assets/images/card_image.webp" alt=".">
+        <img
+            class="the-card__image"
+            src="@/assets/images/card_image_small.webp"
+            srcset="@/assets/images/card_image_small.webp 500w,
+                        @/assets/images/card_image_medium.webp 1000w,
+                        @/assets/images/card_image_large.webp 1500w"
+            alt="."
+        />
         <div class="the-card__info">
             <div class="the-card__price">
                 $ 59,345

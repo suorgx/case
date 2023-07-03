@@ -17,9 +17,33 @@ export default defineComponent({
 
 <template>
     <div class="the-slide">
-        <img v-if="img === '1'" class="the-slide__img" src="@/assets/images/slide_image_1.webp" alt=".">
-        <img v-if="img === '2'" class="the-slide__img" src="@/assets/images/slide_image_2.webp" alt=".">
-        <img v-if="img === '3'" class="the-slide__img" src="@/assets/images/slide_image_3.webp" alt=".">
+        <img
+            v-if="img === '1'"
+            class="the-slide__img"
+            src="@/assets/images/slide_image_1_small.webp"
+            srcset="@/assets/images/slide_image_1_small.webp 500w,
+                        @/assets/images/slide_image_1_medium.webp 1000w,
+                        @/assets/images/slide_image_1_large.webp 1500w"
+            alt="."
+        />
+        <img
+            v-if="img === '2'"
+            class="the-slide__img"
+            src="@/assets/images/slide_image_2_small.webp"
+            srcset="@/assets/images/slide_image_2_small.webp 500w,
+                        @/assets/images/slide_image_2_medium.webp 1000w,
+                        @/assets/images/slide_image_2_large.webp 1500w"
+            alt="."
+        />
+        <img
+            v-if="img === '3'"
+            class="the-slide__img"
+            src="@/assets/images/slide_image_3_small.webp"
+            srcset="@/assets/images/slide_image_3_small.webp 500w,
+                        @/assets/images/slide_image_3_medium.webp 1000w,
+                        @/assets/images/slide_image_3_large.webp 1500w"
+            alt="."
+        />
         <div v-if="date" class="the-slide__date">
             {{ date }}
         </div>

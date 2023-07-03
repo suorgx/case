@@ -27,7 +27,14 @@ export default defineComponent({
                     <TheSearch placeholder="Search by location..." icon></TheSearch>
                 </div>
             </div>
-            <img class="first-section__right" src="@/assets/images/first_section_image.webp" alt=".">
+            <img
+                class="first-section__right"
+                src="@/assets/images/first_section_image_small.webp"
+                srcset="@/assets/images/first_section_image_small.webp 500w,
+                        @/assets/images/first_section_image_medium.webp 1000w,
+                        @/assets/images/first_section_image_large.webp 1500w"
+                alt="."
+            />
         </div>
     </section>
 </template>

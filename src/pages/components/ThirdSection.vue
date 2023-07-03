@@ -15,7 +15,14 @@ export default defineComponent({
 <template>
     <section class="third-section">
         <div class="container third-section__wrapper">
-            <img class="third-section__left" src="../../assets/images/third_section_image.webp" alt=".">
+            <img
+                class="third-section__left"
+                src="@/assets/images/third_section_image_small.webp"
+                srcset="@/assets/images/third_section_image_small.webp 500w,
+                        @/assets/images/third_section_image_medium.webp 1000w,
+                        @/assets/images/third_section_image_large.webp 1500w"
+                alt="."
+            />
             <div class="third-section__right">
                 <TheCaption text="Purus Sit Amet Luctus" base-color></TheCaption>
                 <p class="third-section__description">

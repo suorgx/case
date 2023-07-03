@@ -88,7 +88,6 @@ export default defineComponent({
         &__left {
             max-width: 460px;
             max-height: 728px;
-            object-fit: none;
         }
     }
 

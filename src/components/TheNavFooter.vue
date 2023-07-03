@@ -51,12 +51,12 @@ export default defineComponent({
         list-style-type: none;
         display: flex;
         align-items: center;
-        gap: 40px;
+        gap: 10px;
     }
 
     &__item {
         color: rgba($green-color, 0.90);
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 700;
 
         &--active {
@@ -68,6 +68,28 @@ export default defineComponent({
         text-decoration: none;
         color: inherit;
         display: block;
+    }
+
+    @media (min-width: $mobile) {
+
+        &__item {
+            font-size: 14px;
+        }
+
+        &__list {
+            gap: 20px;
+        }
+    }
+
+    @media (min-width: $tablet) {
+
+        &__item {
+            font-size: 16px;
+        }
+
+        &__list {
+            gap: 40px;
+        }
     }
 }
 </style>

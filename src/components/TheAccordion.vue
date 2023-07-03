@@ -83,7 +83,7 @@ export default defineComponent({
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 8px 12px 5px 8px;
+        padding: 8px 12px 8px 8px;
         cursor: pointer;
     }
 
@@ -149,7 +149,7 @@ export default defineComponent({
         }
 
         &__header {
-            padding: 16px 24px 10px 16px;
+            padding: 16px 24px 16px 16px;
         }
     }
 }
